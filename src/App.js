@@ -139,7 +139,7 @@ const App = () => {
         </Grid>
       </Grid>
 
-      <Box>
+      {/* <Box>
         <Grid container>
           <Grid item md={6} xs={12}></Grid>
           <Grid item md={6} xs={12}>
@@ -151,7 +151,7 @@ const App = () => {
             </Typography>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
