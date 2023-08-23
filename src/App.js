@@ -1,13 +1,15 @@
 import "./App.css";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
+// import AccountCircle from "@mui/icons-material/AccountCircle";
+// import Tooltip from "@mui/material/Tooltip";
+// import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
+// import first from "./5.png";
+// import { Button } from "@mui/material";
 
 const AnimatedBox = ({ children, delay }) => (
   <motion.div
@@ -20,8 +22,14 @@ const AnimatedBox = ({ children, delay }) => (
 );
 
 const App = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
-    <Box sx={{ p: { md: 0, xs: 4 } }}>
+    <Box sx={{ p: { md: 0, xs: 2 } }}>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
       <Grid
         container
         sx={{ p: { md: 5, xs: 3 }, paddingLeft: { md: "300px", xs: "0" } }}
@@ -118,7 +126,7 @@ const App = () => {
                   width: "fit-content",
                   marginTop: 0,
                 }}
-                boxShadow="10px 10px 8px #888888"
+                boxShadow="5px 5px 8px #888888"
               >
                 <Box
                   sx={{ width: { md: "300px", xs: "100%" } }}
@@ -138,20 +146,91 @@ const App = () => {
           </AnimatedBox>
         </Grid>
       </Grid>
+      {/*  */}
 
-      {/* <Box>
-        <Grid container>
-          <Grid item md={6} xs={12}></Grid>
-          <Grid item md={6} xs={12}>
-            <Typography variant="h2">A Header</Typography>
-            <Typography variant="p">
+      {/*  */}
+      <Box
+        sx={{
+          mx: { md: 2, xs: 0 },
+          mb: { md: 4 },
+          color: "#E7E9EB",
+          borderRadius: "3%",
+        }}
+      >
+        <Grid container sx={{ mt: { md: 8, xs: 0 } }}>
+          <Grid
+            item
+            md={6}
+            xs={12}
+            align="center"
+            justifyContent="center"
+            sx={{ mb: { md: 0, xs: 3 } }}
+          >
+            <Typography variant="h2" sx={{ mt: 7, fontWeight: "700", mb: 3 }}>
+              A Header
+            </Typography>
+            <Typography
+              variant="p"
+              sx={{ fontSize: "18px", p: { md: 4, xs: 0 } }}
+            >
               Just some text about something I'll definetly figure out later. I
               don't know what else to write so I'm going to type rubbish
               now....blah blah blah
             </Typography>
           </Grid>
+          <Grid item md={6} xs={12} sx={{ pl: { md: 4, xs: 0 } }}>
+            <Box>
+              <Grid container>
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  End To End Encryption
+                </Box>
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  Send images Using SMS
+                </Box>
+
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  Security
+                </Box>
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  Intuitive UI
+                </Box>
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  Speed & Reliability
+                </Box>
+
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  Online & Offline
+                </Box>
+                <Box
+                  boxShadow="2px 2px 8px #888888"
+                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
+                >
+                  Personalized
+                </Box>
+              </Grid>
+            </Box>
+          </Grid>
         </Grid>
-      </Box> */}
+      </Box>
+      {/*  */}
     </Box>
   );
 };

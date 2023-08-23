@@ -1,3 +1,18 @@
 body {
   background-color: #0f1c23 !important;
+  font-family: Ubuntu !important;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #6eb4d9;
+  transform-origin: 0%;
+}
+
+.btn1 {
+  background-color: aqua !important;
 }
