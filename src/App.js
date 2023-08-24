@@ -148,6 +148,46 @@ const App = () => {
       </Grid>
       {/*  */}
 
+      <Box sx={{ bgcolor: "#b6c8dd", p: { md: 20, xs: 2 } }}>
+        <Typography align="center" variant="h2" sx={{ fontWeight: "700" }}>
+          Features
+        </Typography>
+        <Grid container>
+          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+
       {/*  */}
       <Box
         sx={{
