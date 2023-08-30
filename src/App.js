@@ -10,6 +10,7 @@ import DoneAllIcon from "@mui/icons-material/DoneAll";
 import Avatar from "@mui/material/Avatar";
 // import first from "./5.png";
 // import { Button } from "@mui/material";
+import Scroll from "./components/scroll";
 
 const AnimatedBox = ({ children, delay }) => (
   <motion.div
@@ -147,8 +148,42 @@ const App = () => {
         </Grid>
       </Grid>
       {/*  */}
+      <Scroll />
+      {/*  */}
+      <Box>
+        <Grid container>
+          <Grid item xs={6} md={6}>
+            <Box>
+              <Box
+                component="img"
+                src="https://images.unsplash.com/photo-1682687982029-edb9aecf5f89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60"
+              />
+              <Typography variant="h1">Say anything</Typography>
+              <Typography variant="p">
+                Share text, voice messages, photos, videos, GIFs and files for
+                free. Signal uses your phone's data connection so you can avoid
+                SMS and MMS fees.
+              </Typography>
+            </Box>
+          </Grid>
 
-      <Box sx={{ bgcolor: "#b6c8dd", p: { md: 20, xs: 2 } }}>
+          <Grid item xs={6} md={6}>
+            <Box>
+              <Box
+                component="img"
+                src="https://images.unsplash.com/photo-1682687982029-edb9aecf5f89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60"
+              />
+              <Typography variant="h1">Say anything</Typography>
+              <Typography variant="p">
+                Share text, voice messages, photos, videos, GIFs and files for
+                free. Signal uses your phone's data connection so you can avoid
+                SMS and MMS fees.
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+      {/* <Box sx={{ bgcolor: "#b6c8dd", p: { md: 20, xs: 2 } }}>
         <Typography align="center" variant="h2" sx={{ fontWeight: "700" }}>
           Features
         </Typography>
@@ -186,7 +221,11 @@ const App = () => {
             </Typography>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
+
+      {/*  */}
+
+      {/*  */}
 
       {/*  */}
       <Box
@@ -196,80 +235,7 @@ const App = () => {
           color: "#E7E9EB",
           borderRadius: "3%",
         }}
-      >
-        <Grid container sx={{ mt: { md: 8, xs: 0 } }}>
-          <Grid
-            item
-            md={6}
-            xs={12}
-            align="center"
-            justifyContent="center"
-            sx={{ mb: { md: 0, xs: 3 } }}
-          >
-            <Typography variant="h2" sx={{ mt: 7, fontWeight: "700", mb: 3 }}>
-              A Header
-            </Typography>
-            <Typography
-              variant="p"
-              sx={{ fontSize: "18px", p: { md: 4, xs: 0 } }}
-            >
-              Just some text about something I'll definetly figure out later. I
-              don't know what else to write so I'm going to type rubbish
-              now....blah blah blah
-            </Typography>
-          </Grid>
-          <Grid item md={6} xs={12} sx={{ pl: { md: 4, xs: 0 } }}>
-            <Box>
-              <Grid container>
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  End To End Encryption
-                </Box>
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  Send images Using SMS
-                </Box>
-
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  Security
-                </Box>
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  Intuitive UI
-                </Box>
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  Speed & Reliability
-                </Box>
-
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  Online & Offline
-                </Box>
-                <Box
-                  boxShadow="2px 2px 8px #888888"
-                  sx={{ p: 3, m: { md: 2, xs: 1 }, borderRadius: "30px" }}
-                >
-                  Personalized
-                </Box>
-              </Grid>
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
+      ></Box>
       {/*  */}
     </Box>
   );

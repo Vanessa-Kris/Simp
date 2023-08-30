@@ -1,6 +1,7 @@
 body {
   background-color: #0f1c23 !important;
   font-family: Ubuntu !important;
+  color: #ffffff;
 }
 
 .progress-bar {
@@ -14,5 +15,34 @@ body {
 }
 
 .btn1 {
-  background-color: aqua !important;
+  background-color: #b6c8dd !important;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+ z-index: -1;
+ font-family:  "Plaster", sans-serif !important;
+
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: -1;
+  padding: 10px;
+
+}
+
+.parallax span {
+  margin-right: 30px;
 }
