@@ -4,16 +4,10 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
-// import AccountCircle from "@mui/icons-material/AccountCircle";
-// import Tooltip from "@mui/material/Tooltip";
-// import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
-// import first from "./5.png";
-// import { Button } from "@mui/material";
 import Scroll from "./components/scroll";
 import Footer from "./components/footer";
 import a from "../src/1.png";
-// import d from "../src/d.svg";
 
 const AnimatedBox = ({ children, delay }) => (
   <motion.div
@@ -34,20 +28,22 @@ const App = () => {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
+      {/* Message Header */}
       <Grid
         container
         sx={{ p: { md: 5, xs: 3 }, paddingLeft: { md: "300px", xs: "0" } }}
       >
         <AnimatedBox delay={0.2}>
           <Typography variant="h3" sx={{ fontWeight: 500, color: "#fff" }}>
-            Justin
+            Deku
           </Typography>
-
+          {/*  */}
+          {/* Fisrt Message */}
           <Grid item md={12} xs={12} alignItems="center">
             <Box sx={{ display: "flex", alignItems: "center", mt: 4 }}>
               <Avatar
                 sx={{ mr: 2 }}
-                alt="Remy Sharp"
+                alt="Avatar"
                 src="https://img.freepik.com/free-vector/little-boy-anime-wearing-winter-clothes_18591-77250.jpg?size=626&ext=jpg"
               />
               <Box
@@ -74,6 +70,7 @@ const App = () => {
           </Grid>
         </AnimatedBox>
       </Grid>
+      {/*  */}
       {/* Reply */}
       <Grid container sx={{ p: { md: 5, xs: 3 } }}>
         <Grid
@@ -106,6 +103,7 @@ const App = () => {
         </Grid>
       </Grid>
       {/*  */}
+      {/* Image message */}
       <Grid container sx={{ p: { md: 5, xs: 3 } }}>
         <Grid
           item
@@ -151,7 +149,10 @@ const App = () => {
         </Grid>
       </Grid>
       {/*  */}
-      <Box sx={{ p: { md: 20, xs: 2 }, color: "#dad8d8" }}>
+      {/* Features */}
+      <Box
+        sx={{ px: { md: 20, xs: 2 }, py: { md: 10, xs: 2 }, color: "#dad8d8" }}
+      >
         <Typography align="center" variant="h2" sx={{ fontWeight: "700" }}>
           Features
         </Typography>
@@ -195,11 +196,13 @@ const App = () => {
         </Grid>
       </Box>
       {/*  */}
+      {/* Scroll */}
       <Box>
         <Scroll />
       </Box>
       {/*  */}
-      <Box sx={{ p: { md: 15, xs: 0 } }}>
+      {/* How it works */}
+      <Box sx={{ p: { md: 10, xs: 0 } }}>
         <Typography
           align="center"
           variant="h3"
@@ -214,7 +217,7 @@ const App = () => {
             md={6}
             justifyContent="center"
             align="center"
-            sx={{ p: 3, height: "500px" }}
+            sx={{ p: 3 }}
           >
             <Box
               sx={{
@@ -228,8 +231,9 @@ const App = () => {
           <Grid item xs={12} md={6}>
             <Box
               sx={{
-                pr: { md: 30, xs: 0 },
+                pr: { md: 20, xs: 0 },
                 color: "#dad8d8",
+                pb: { md: 0, xs: 4 },
               }}
             >
               <Typography variant="h5" sx={{ pt: 8 }}>
@@ -237,7 +241,7 @@ const App = () => {
               </Typography>
               <Typography variant="p">
                 Share text, voice messages, photos, videos, GIFs and files for
-                free. Signal uses your phone's data connection so you can avoid
+                free. Deku uses your phone's data connection so you can avoid
                 SMS and MMS fees.
               </Typography>
               <Typography variant="h5" sx={{ pt: 5 }}>
@@ -245,7 +249,7 @@ const App = () => {
               </Typography>
               <Typography variant="p">
                 Share text, voice messages, photos, videos, GIFs and files for
-                free. Signal uses your phone's data connection so you can avoid
+                free. Deku uses your phone's data connection so you can avoid
                 SMS and MMS fees.
               </Typography>
               <Typography variant="h5" sx={{ pt: 5 }}>
@@ -253,27 +257,17 @@ const App = () => {
               </Typography>
               <Typography variant="p">
                 Share text, voice messages, photos, videos, GIFs and files for
-                free. Signal uses your phone's data connection so you can avoid
+                free. Deku uses your phone's data connection so you can avoid
                 SMS and MMS fees.
               </Typography>
             </Box>
           </Grid>
         </Grid>
       </Box>
-
       {/*  */}
-
-      {/*  */}
-      <Box
-        sx={{
-          mx: { md: 2, xs: 0 },
-          mb: { md: 4 },
-          color: "#E7E9EB",
-          borderRadius: "3%",
-        }}
-      ></Box>
-      {/*  */}
+      {/*Footer  */}
       <Footer />
+      {/*  */}
     </Box>
   );
 };

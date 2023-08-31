@@ -68,8 +68,8 @@ export default function Nav() {
             <Box sx={{ ms: "auto" }}>
               <Button
                 size="small"
-                sx={{ borderRadius: "30px" }}
-                variant="contained"
+                sx={{ borderRadius: "30px", color: "#cdcecf" }}
+                variant="outlined"
               >
                 Download for Android
               </Button>
