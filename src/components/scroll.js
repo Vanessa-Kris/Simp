@@ -58,9 +58,6 @@ export default function Scroll() {
       <ParallaxText baseVelocity={-5}>
         End-To-End Encryption Progressive App Secure
       </ParallaxText>
-      <ParallaxText baseVelocity={5}>
-        Intuitive Send-Images-Using-SMS
-      </ParallaxText>
     </div>
   );
 }

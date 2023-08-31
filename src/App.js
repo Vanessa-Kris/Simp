@@ -11,6 +11,9 @@ import Avatar from "@mui/material/Avatar";
 // import first from "./5.png";
 // import { Button } from "@mui/material";
 import Scroll from "./components/scroll";
+import Footer from "./components/footer";
+import a from "../src/1.png";
+// import d from "../src/d.svg";
 
 const AnimatedBox = ({ children, delay }) => (
   <motion.div
@@ -148,32 +151,106 @@ const App = () => {
         </Grid>
       </Grid>
       {/*  */}
-      <Scroll />
+      <Box sx={{ p: { md: 20, xs: 2 }, color: "#dad8d8" }}>
+        <Typography align="center" variant="h2" sx={{ fontWeight: "700" }}>
+          Features
+        </Typography>
+        <Grid container>
+          <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography variant="h5">Say anything</Typography>
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+          <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography variant="h5">Say anything</Typography>
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+          <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography variant="h5">Say anything</Typography>
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+          <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
+            <DoneAllIcon />
+            <Typography variant="h5">Say anything</Typography>
+            <Typography>
+              Just some text about something I'll definetly figure out later. I
+              don't know what else to write so I'm going to type rubbish
+              now....blah blah blah
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
       {/*  */}
       <Box>
+        <Scroll />
+      </Box>
+      {/*  */}
+      <Box sx={{ p: { md: 15, xs: 0 } }}>
+        <Typography
+          align="center"
+          variant="h3"
+          sx={{ color: "#fff", mt: 8, mb: 5, fontWeight: 800 }}
+        >
+          How Deku messaging works
+        </Typography>
         <Grid container>
-          <Grid item xs={6} md={6}>
-            <Box>
-              <Box
-                component="img"
-                src="https://images.unsplash.com/photo-1682687982029-edb9aecf5f89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60"
-              />
-              <Typography variant="h1">Say anything</Typography>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            justifyContent="center"
+            align="center"
+            sx={{ p: 3, height: "500px" }}
+          >
+            <Box
+              sx={{
+                pl: { md: 10, xs: 0 },
+              }}
+            >
+              <Box component="img" src={a} sx={{ width: "300px" }} />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{
+                pr: { md: 30, xs: 0 },
+                color: "#dad8d8",
+              }}
+            >
+              <Typography variant="h5" sx={{ pt: 8 }}>
+                Say anything
+              </Typography>
               <Typography variant="p">
                 Share text, voice messages, photos, videos, GIFs and files for
                 free. Signal uses your phone's data connection so you can avoid
                 SMS and MMS fees.
               </Typography>
-            </Box>
-          </Grid>
-
-          <Grid item xs={6} md={6}>
-            <Box>
-              <Box
-                component="img"
-                src="https://images.unsplash.com/photo-1682687982029-edb9aecf5f89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60"
-              />
-              <Typography variant="h1">Say anything</Typography>
+              <Typography variant="h5" sx={{ pt: 5 }}>
+                Say anything
+              </Typography>
+              <Typography variant="p">
+                Share text, voice messages, photos, videos, GIFs and files for
+                free. Signal uses your phone's data connection so you can avoid
+                SMS and MMS fees.
+              </Typography>
+              <Typography variant="h5" sx={{ pt: 5 }}>
+                Say anything
+              </Typography>
               <Typography variant="p">
                 Share text, voice messages, photos, videos, GIFs and files for
                 free. Signal uses your phone's data connection so you can avoid
@@ -183,47 +260,6 @@ const App = () => {
           </Grid>
         </Grid>
       </Box>
-      {/* <Box sx={{ bgcolor: "#b6c8dd", p: { md: 20, xs: 2 } }}>
-        <Typography align="center" variant="h2" sx={{ fontWeight: "700" }}>
-          Features
-        </Typography>
-        <Grid container>
-          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
-            <DoneAllIcon />
-            <Typography>
-              Just some text about something I'll definetly figure out later. I
-              don't know what else to write so I'm going to type rubbish
-              now....blah blah blah
-            </Typography>
-          </Grid>
-          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
-            <DoneAllIcon />
-            <Typography>
-              Just some text about something I'll definetly figure out later. I
-              don't know what else to write so I'm going to type rubbish
-              now....blah blah blah
-            </Typography>
-          </Grid>
-          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
-            <DoneAllIcon />
-            <Typography>
-              Just some text about something I'll definetly figure out later. I
-              don't know what else to write so I'm going to type rubbish
-              now....blah blah blah
-            </Typography>
-          </Grid>
-          <Grid item md={6} xs={6} sx={{ p: { md: 2, xs: 1 } }}>
-            <DoneAllIcon />
-            <Typography>
-              Just some text about something I'll definetly figure out later. I
-              don't know what else to write so I'm going to type rubbish
-              now....blah blah blah
-            </Typography>
-          </Grid>
-        </Grid>
-      </Box> */}
-
-      {/*  */}
 
       {/*  */}
 
@@ -237,6 +273,7 @@ const App = () => {
         }}
       ></Box>
       {/*  */}
+      <Footer />
     </Box>
   );
 };
