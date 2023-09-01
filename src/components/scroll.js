@@ -56,7 +56,8 @@ export default function Scroll() {
   return (
     <div className="scroll">
       <ParallaxText baseVelocity={-5}>
-        End-To-End Encryption Progressive App Secure
+        free, privacy, speak freely, no internet connection needed, send
+        messages using sms
       </ParallaxText>
     </div>
   );
