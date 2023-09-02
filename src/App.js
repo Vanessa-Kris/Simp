@@ -187,17 +187,12 @@ const App = () => {
                 p: 4,
                 bgcolor: "#095256",
                 m: { md: 3, xs: 1 },
-                height: { md: "270px", xs: "100%" },
+                height: { md: "289px", xs: "100%" },
               }}
             >
-              <Typography variant="h5">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faComments}
-                  style={{ paddingRight: 7 }}
-                />{" "}
-                End-to-End Encryption
-              </Typography>
+              {" "}
+              <FontAwesomeIcon icon={faComments} size="lg" />
+              <Typography variant="h5"> End-to-End Encryption</Typography>
               <Typography>
                 With Deku Messaging all your messages are completely secure,
                 ensuring utmost privacy. Neither third parties nor we can access
@@ -214,17 +209,12 @@ const App = () => {
                 p: 4,
                 bgcolor: "#000",
                 m: { md: 3, xs: 1 },
-                height: { md: "270px", xs: "100%" },
+                height: { md: "289px", xs: "100%" },
               }}
             >
-              <Typography variant="h5">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faShield}
-                  style={{ paddingRight: 7 }}
-                />{" "}
-                Data Protection
-              </Typography>
+              {" "}
+              <FontAwesomeIcon icon={faShield} size="lg" />
+              <Typography variant="h5"> Data Protection</Typography>
               <Typography>
                 With robust encryption and strict access controls, we ensure
                 that your data remains safe and confidential. You can use Deku
@@ -238,14 +228,9 @@ const App = () => {
               xs={12}
               sx={{ p: 4, bgcolor: "#0a1320", m: { md: 3, xs: 1 } }}
             >
-              <Typography variant="h5">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faImages}
-                  style={{ paddingRight: 7 }}
-                />{" "}
-                Send Images Using SMS
-              </Typography>
+              {" "}
+              <FontAwesomeIcon icon={faImages} size="lg" />
+              <Typography variant="h5"> Send Images Using SMS</Typography>
               <Typography>
                 Deku Messaging App allows you to send images using SMS! We've
                 enhanced your messaging experience by enabling you to share not
