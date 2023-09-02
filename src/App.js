@@ -7,7 +7,17 @@ import DoneAllIcon from "@mui/icons-material/DoneAll";
 import Avatar from "@mui/material/Avatar";
 import Scroll from "./components/scroll";
 import Footer from "./components/footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faKey,
+  faLock,
+  faShield,
+  faComments,
+  faImages,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGooglePlay } from "@fortawesome/fontawesome-free-brands";
 import a from "../src/1.png";
+import { Button } from "@mui/material";
 
 const AnimatedBox = ({ children, delay }) => (
   <motion.div
@@ -95,7 +105,7 @@ const App = () => {
                   boxShadow="5px 5px 8px #888888"
                 >
                   <Typography variant="p">
-                    Wow.... What's it? <DoneAllIcon />
+                    Wow 🤩.... What's it? <DoneAllIcon />
                   </Typography>
                 </Box>
                 <Avatar sx={{ ml: 2 }} src="/" />
@@ -125,7 +135,7 @@ const App = () => {
                   sx={{
                     bgcolor: "#42A5F5",
                     borderRadius: "30px",
-                    padding: { md: "15px", xs: "20px" },
+                    padding: { md: "5px", xs: "2px" },
                     width: "fit-content",
                     marginTop: 0,
                   }}
@@ -158,44 +168,76 @@ const App = () => {
             color: "#dad8d8",
           }}
         >
-          <Typography align="center" variant="h2" sx={{ fontWeight: "700" }}>
+          <Typography
+            align="center"
+            variant="h2"
+            sx={{ fontWeight: "700", py: 4 }}
+          >
             Features
           </Typography>
           <Grid container>
-            <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
-              <DoneAllIcon />
-              <Typography variant="h5">Say anything</Typography>
+            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+              <Typography variant="h5">
+                {" "}
+                <FontAwesomeIcon
+                  icon={faComments}
+                  style={{ paddingRight: 7 }}
+                />{" "}
+                End-to-End Encryption
+              </Typography>
               <Typography>
-                Just some text about something I'll definetly figure out later.
-                I don't know what else to write so I'm going to type rubbish
-                now....blah blah blah
+                Your messages are completely secure, ensuring utmost privacy.
+                Neither third parties nor we can access or read your messages.
+                Deku SMS messaging prioritizes your privacy above all else.
               </Typography>
             </Grid>
-            <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
-              <DoneAllIcon />
-              <Typography variant="h5">Say anything</Typography>
+            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+              <Typography variant="h5">
+                {" "}
+                <FontAwesomeIcon
+                  icon={faKey}
+                  style={{ paddingRight: 7 }}
+                />{" "}
+                Secure Authentication
+              </Typography>
               <Typography>
-                Just some text about something I'll definetly figure out later.
-                I don't know what else to write so I'm going to type rubbish
-                now....blah blah blah
+                With our secure authentication system, you can trust that only
+                authorized users have access to their accounts. We employ
+                cutting-edge encryption techniques and multi-factor
+                authentication options to fortify your privacy and safeguard
+                your messages.
               </Typography>
             </Grid>
-            <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
-              <DoneAllIcon />
-              <Typography variant="h5">Say anything</Typography>
+            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+              <Typography variant="h5">
+                {" "}
+                <FontAwesomeIcon
+                  icon={faLock}
+                  style={{ paddingRight: 7 }}
+                />{" "}
+                Data Protection
+              </Typography>
               <Typography>
-                Just some text about something I'll definetly figure out later.
-                I don't know what else to write so I'm going to type rubbish
-                now....blah blah blah
+                With robust encryption and strict access controls, we ensure
+                that your data remains safe and confidential. You can use Deku
+                Messaging App with confidence, knowing that your personal
+                information and messages are shielded from unauthorized access.
               </Typography>
             </Grid>
-            <Grid item md={6} xs={12} sx={{ p: { md: 2, xs: 1 } }}>
-              <DoneAllIcon />
-              <Typography variant="h5">Say anything</Typography>
+            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+              <Typography variant="h5">
+                {" "}
+                <FontAwesomeIcon
+                  icon={faImages}
+                  style={{ paddingRight: 7 }}
+                />{" "}
+                Send Images Using SMS
+              </Typography>
               <Typography>
-                Just some text about something I'll definetly figure out later.
-                I don't know what else to write so I'm going to type rubbish
-                now....blah blah blah
+                Deku Messaging App allows you to send images using SMS! We've
+                enhanced your messaging experience by enabling you to share not
+                only text but also images effortlessly. This new feature makes
+                communication even more engaging and expressive.
               </Typography>
             </Grid>
           </Grid>
@@ -208,13 +250,6 @@ const App = () => {
         {/*  */}
         {/* How it works */}
         <Box sx={{ p: { md: 10, xs: 0 } }}>
-          <Typography
-            align="center"
-            variant="h3"
-            sx={{ color: "#fff", mt: 8, mb: 5, fontWeight: 800 }}
-          >
-            How Deku messaging works
-          </Typography>
           <Grid container>
             <Grid
               item
@@ -237,41 +272,63 @@ const App = () => {
               </Box>
             </Grid>
 
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} display="flex">
               <Box
+                align="center"
+                justifyContent="center"
+                margin="auto"
+                alignContent="center"
                 sx={{
                   pr: { md: 20, xs: 0 },
                   color: "#dad8d8",
                   pb: { md: 0, xs: 4 },
                 }}
               >
-                <Typography variant="h5" sx={{ pt: 8 }}>
-                  Say anything
+                <Typography variant="h3" sx={{ p: 3, fontWeight: 700 }}>
+                  SMS Gateway
                 </Typography>
-                <Typography variant="p">
-                  Share text, voice messages, photos, videos, GIFs and files for
-                  free. Deku uses your phone's data connection so you can avoid
-                  SMS and MMS fees.
-                </Typography>
-                <Typography variant="h5" sx={{ pt: 5 }}>
-                  Say anything
-                </Typography>
-                <Typography variant="p">
-                  Share text, voice messages, photos, videos, GIFs and files for
-                  free. Deku uses your phone's data connection so you can avoid
-                  SMS and MMS fees.
-                </Typography>
-                <Typography variant="h5" sx={{ pt: 5 }}>
-                  Say anything
-                </Typography>
-                <Typography variant="p">
-                  Share text, voice messages, photos, videos, GIFs and files for
-                  free. Deku uses your phone's data connection so you can avoid
-                  SMS and MMS fees.
+                <Typography variant="h5">
+                  Using Deku messaging, you can setup your personalized SMS
+                  Gateway through your mobile device, enabling you to send bulk
+                  text messages.
                 </Typography>
               </Box>
             </Grid>
           </Grid>
+        </Box>
+        {/*  */}
+        <Box sx={{ mt: { md: 0, xs: 5 } }}>
+          <Typography
+            align="center"
+            sx={{
+              color: "#dad8d8",
+              fontWeight: 700,
+              fontSize: { md: "90px", xs: "50px" },
+            }}
+          >
+            Get Deku Messaging
+          </Typography>
+          <Box align="center" sx={{ mb: { md: 10, xs: 5 } }}>
+            <Button
+              size="large"
+              sx={{ borderRadius: "30px", color: "#cdcecf", p: 2, m: 1 }}
+              variant="outlined"
+            >
+              <FontAwesomeIcon
+                icon={faGooglePlay}
+                style={{ padding: 5 }}
+                size="large"
+              />{" "}
+              Google Play
+            </Button>
+            <Button
+              size="large"
+              sx={{ borderRadius: "30px", color: "#cdcecf", p: 2, m: 1 }}
+              variant="outlined"
+            >
+              Deku for Web
+            </Button>
+          </Box>
         </Box>
         {/*  */}
       </Box>

@@ -1,5 +1,5 @@
 body {
-  background-color: #000000 !important;
+  background-color: #08153e !important;
   font-family: Ubuntu !important;
 }
 
@@ -9,7 +9,7 @@ body {
   left: 0;
   right: 0;
   height: 10px;
-  background: #6eb4d9;
+  background: #1b611b;
   transform-origin: 0%;
 }
 

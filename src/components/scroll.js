@@ -43,10 +43,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
-        <span>{children} </span>
+        <span> {children} </span>
+        <span> {children} </span>
+        <span> {children} </span>
+        <span> {children} </span>
       </motion.div>
     </div>
   );
