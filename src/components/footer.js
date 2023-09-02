@@ -15,7 +15,7 @@ export default function Footer() {
       <Box
         sx={{
           p: 3,
-          bgcolor: "#0F1C2f",
+          bgcolor: "#0a1320",
           color: "#E7E9EB",
         }}
         display="flex"
@@ -93,7 +93,7 @@ export default function Footer() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ py: 3, bgcolor: "#0F1C23" }}>
+      <Box sx={{ py: 3, bgcolor: "#000" }}>
         <Typography align="center" sx={{ color: "#E7E9EB" }}>
           &copy; Deku Deku {currentYear}
         </Typography>

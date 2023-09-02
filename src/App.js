@@ -9,8 +9,6 @@ import Scroll from "./components/scroll";
 import Footer from "./components/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faKey,
-  faLock,
   faShield,
   faComments,
   faImages,
@@ -175,8 +173,23 @@ const App = () => {
           >
             Features
           </Typography>
-          <Grid container>
-            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            align="center"
+          >
+            <Grid
+              item
+              md={5}
+              xs={12}
+              sx={{
+                p: 4,
+                bgcolor: "#095256",
+                m: { md: 3, xs: 1 },
+                height: { md: "270px", xs: "100%" },
+              }}
+            >
               <Typography variant="h5">
                 {" "}
                 <FontAwesomeIcon
@@ -186,33 +199,28 @@ const App = () => {
                 End-to-End Encryption
               </Typography>
               <Typography>
-                Your messages are completely secure, ensuring utmost privacy.
-                Neither third parties nor we can access or read your messages.
-                Deku SMS messaging prioritizes your privacy above all else.
+                With Deku Messaging all your messages are completely secure,
+                ensuring utmost privacy. Neither third parties nor we can access
+                or read your messages. Deku SMS messaging prioritizes your
+                privacy above all else.
               </Typography>
             </Grid>
-            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+
+            <Grid
+              item
+              md={5}
+              xs={12}
+              sx={{
+                p: 4,
+                bgcolor: "#000",
+                m: { md: 3, xs: 1 },
+                height: { md: "270px", xs: "100%" },
+              }}
+            >
               <Typography variant="h5">
                 {" "}
                 <FontAwesomeIcon
-                  icon={faKey}
-                  style={{ paddingRight: 7 }}
-                />{" "}
-                Secure Authentication
-              </Typography>
-              <Typography>
-                With our secure authentication system, you can trust that only
-                authorized users have access to their accounts. We employ
-                cutting-edge encryption techniques and multi-factor
-                authentication options to fortify your privacy and safeguard
-                your messages.
-              </Typography>
-            </Grid>
-            <Grid item md={6} xs={12} sx={{ p: 2 }}>
-              <Typography variant="h5">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faLock}
+                  icon={faShield}
                   style={{ paddingRight: 7 }}
                 />{" "}
                 Data Protection
@@ -224,7 +232,12 @@ const App = () => {
                 information and messages are shielded from unauthorized access.
               </Typography>
             </Grid>
-            <Grid item md={6} xs={12} sx={{ p: 2 }}>
+            <Grid
+              item
+              md={5}
+              xs={12}
+              sx={{ p: 4, bgcolor: "#0a1320", m: { md: 3, xs: 1 } }}
+            >
               <Typography variant="h5">
                 {" "}
                 <FontAwesomeIcon

@@ -12,7 +12,7 @@ export default function Nav() {
           <AppBar
             position="static"
             fixedTop
-            sx={{ bgcolor: "#0f1c23", color: "#fff" }}
+            sx={{ bgcolor: "#000", color: "#fff" }}
           >
             <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
               <Box
@@ -50,7 +50,7 @@ export default function Nav() {
 
       {/* Mobile View */}
       <MediaQuery maxWidth={1224}>
-        <AppBar position="static" sx={{ bgcolor: "#0f1c23", color: "#fff" }}>
+        <AppBar position="static" sx={{ bgcolor: "#000", color: "#fff" }}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <Box
               sx={{
