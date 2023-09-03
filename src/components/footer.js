@@ -33,10 +33,10 @@ export default function Footer() {
             <Typography variant="body">SMS messaging app</Typography>
           </Grid>
           <Grid item md={3} xs={12} sx={{ p: 1 }}>
-            <Typography variant="h6" sx={{ pl: 2 }}>
+            <Typography variant="p" sx={{ pl: 2 }}>
               Links
             </Typography>
-            <List>
+            <List sx={{ fontSize: "14px" }}>
               <ListItem>Features</ListItem>
               <ListItem>Developers</ListItem>
             </List>

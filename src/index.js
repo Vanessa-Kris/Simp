@@ -4,13 +4,16 @@ import "./index.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import App from "./App";
 import Nav from "./components/nav";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Index() {
   return (
     <React.StrictMode>
-      <CssBaseline />
-      <Nav />
-      <App />
+      <ParallaxProvider>
+        <CssBaseline />
+        <Nav />
+        <App />
+      </ParallaxProvider>
     </React.StrictMode>
   );
 }
