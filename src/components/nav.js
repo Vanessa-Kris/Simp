@@ -12,7 +12,7 @@ export default function Nav() {
           <AppBar
             position="static"
             fixedTop
-            sx={{ bgcolor: "#000", color: "#fff" }}
+            sx={{ bgcolor: "transparent", color: "#fff" }}
           >
             <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
               <Box

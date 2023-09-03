@@ -7,7 +7,6 @@ import Features from "./components/features";
 import Banner from "./components/banner";
 import Gateway from "./components/gateway";
 import Download from "./components/download";
-import { Donut, CircleGrid, Diamond } from "react-awesome-shapes";
 
 const App = () => {
   const { scrollYProgress } = useScroll();

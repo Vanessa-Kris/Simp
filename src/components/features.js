@@ -17,7 +17,7 @@ export default function Features() {
           </Typography>
           <Grid
             container
-            columnSpacing={2}
+            columnSpacing={0}
             justifyContent="center"
             alignItems="center"
             sx={{ py: 5, px: 15, color: "#fff" }}
@@ -81,7 +81,7 @@ export default function Features() {
 
       {/* Mobile View */}
       <MediaQuery maxWidth={1224}>
-        <Box>
+        <Box sx={{ color: "#fff" }}>
           <Typography
             sx={{ color: "#fff", fontWeight: 700, mt: 5 }}
             variant="h3"
@@ -89,15 +89,19 @@ export default function Features() {
           >
             Features
           </Typography>
-          <Grid container sx={{ p: 5 }}>
-            <Grid item md={6} xs={12}>
+          <Grid container sx={{ p: 4 }}>
+            <Grid item md={6} xs={12} sx={{ p: 1, mb: 1 }}>
               <Box
                 component="img"
+                sx={{ width: "100%", borderRadius: "30px" }}
                 src="https://img.freepik.com/free-vector/security-concept-illustration-people-holding-chain_53876-43028.jpg?size=626&ext=jpg"
               ></Box>
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant="h5"> End-to-End Encryption</Typography>
+            <Grid item xs={12} sx={{ p: 1, mb: 1 }}>
+              <Typography variant="h5" sx={{ pb: 1, fontWeight: 600 }}>
+                {" "}
+                End-to-End Encryption
+              </Typography>
               <Typography>
                 With Deku Messaging all your messages are completely secure,
                 ensuring utmost privacy. Neither third parties nor we can access
@@ -106,14 +110,18 @@ export default function Features() {
               </Typography>
             </Grid>
             {/*  */}
-            <Grid item xs={12}>
+            <Grid item xs={12} sx={{ p: 1, mb: 1 }}>
               <Box
                 component="img"
+                sx={{ width: "100%", borderRadius: "30px" }}
                 src="https://img.freepik.com/free-vector/information-privacy-concept-illustration_335657-5489.jpg?size=626&ext=jpg"
               ></Box>
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant="h5"> Data Protection</Typography>
+            <Grid item xs={12} sx={{ p: 1, mb: 1 }}>
+              <Typography variant="h5" sx={{ pb: 1, fontWeight: 600 }}>
+                {" "}
+                Data Protection
+              </Typography>
               <Typography>
                 With robust encryption and strict access controls, we ensure
                 that your data remains safe and confidential. You can use Deku
@@ -122,15 +130,18 @@ export default function Features() {
               </Typography>
             </Grid>
 
-            {/* https://img.freepik.com/free-photo/woman-holding-padlock-laptop_53876-75178.jpg?size=626&ext=jpg  */}
-            <Grid item xs={12}>
+            <Grid item xs={12} sx={{ p: 1, mb: 1 }}>
               <Box
                 component="img"
+                sx={{ width: "100%", borderRadius: "30px" }}
                 src="https://img.freepik.com/free-vector/image-upload-concept-illustration_114360-996.jpg?size=626&ext=jpg"
               ></Box>
             </Grid>
-            <Grid item xs={12}>
-              <Typography variant="h5"> Send Images Using SMS</Typography>
+            <Grid item xs={12} sx={{ p: 1, mb: 1 }}>
+              <Typography variant="h5" sx={{ pb: 1, fontWeight: 600 }}>
+                {" "}
+                Send Images Using SMS
+              </Typography>
               <Typography>
                 Deku Messaging App allows you to send images using SMS! We've
                 enhanced your messaging experience by enabling you to share not
