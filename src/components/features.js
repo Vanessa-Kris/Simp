@@ -9,7 +9,7 @@ export default function Features() {
       <MediaQuery minWidth={1224}>
         <Box>
           <Typography
-            sx={{ color: "#fff", fontWeight: 700, mt: 5 }}
+            sx={{ color: "#000", fontWeight: 700, mt: 5 }}
             variant="h2"
             align="center"
           >
@@ -20,20 +20,23 @@ export default function Features() {
             columnSpacing={0}
             justifyContent="center"
             alignItems="center"
-            sx={{ py: 5, px: 15, color: "#fff" }}
+            sx={{ py: 5, px: 15, color: "#000" }}
           >
-            <Grid item md={6} sx={{ mb: 4 }}>
+            <Grid item md={6} sx={{ mb: 2 }}>
               <Box
                 component="img"
                 sx={{
                   width: "500px",
                   borderRadius: "30px",
                 }}
-                src="https://img.freepik.com/free-vector/security-concept-illustration-people-holding-chain_53876-43028.jpg?size=626&ext=jpg"
+                src="https://img.freepik.com/free-vector/security-concept-illustration_114360-4127.jpg?size=626&ext=jpg"
               ></Box>
             </Grid>
-            <Grid item md={6} sx={{ mb: 4 }}>
-              <Typography variant="h5"> End-to-End Encryption</Typography>
+            <Grid item md={6} sx={{ mb: 2 }}>
+              <Typography variant="h5" sx={{ fontWeight: 500 }}>
+                {" "}
+                End-to-End Encryption
+              </Typography>
               <Typography>
                 With Deku Messaging all your messages are completely secure,
                 ensuring utmost privacy. Neither third parties nor we can access
@@ -43,8 +46,11 @@ export default function Features() {
             </Grid>
             {/*  */}
 
-            <Grid item md={6} sx={{ mb: 4 }}>
-              <Typography variant="h5"> Data Protection</Typography>
+            <Grid item md={6} sx={{ mb: 0 }}>
+              <Typography variant="h5" sx={{ fontWeight: 500 }}>
+                {" "}
+                Data Protection
+              </Typography>
               <Typography>
                 With robust encryption and strict access controls, we ensure
                 that your data remains safe and confidential. You can use Deku
@@ -52,7 +58,7 @@ export default function Features() {
                 information and messages are shielded from unauthorized access.
               </Typography>
             </Grid>
-            <Grid item md={6} sx={{ mb: 4 }}>
+            <Grid item md={6} sx={{ mb: 0 }}>
               <Box
                 component="img"
                 sx={{ width: "400px", borderRadius: "30px" }}
@@ -67,7 +73,10 @@ export default function Features() {
               ></Box>
             </Grid>
             <Grid item md={6} sx={{ mb: 4 }}>
-              <Typography variant="h5"> Send Images Using SMS</Typography>
+              <Typography variant="h5" sx={{ fontWeight: 500 }}>
+                {" "}
+                Send Images Using SMS
+              </Typography>
               <Typography>
                 Deku Messaging App allows you to send images using SMS! We've
                 enhanced your messaging experience by enabling you to share not
@@ -81,9 +90,9 @@ export default function Features() {
 
       {/* Mobile View */}
       <MediaQuery maxWidth={1224}>
-        <Box sx={{ color: "#fff" }}>
+        <Box sx={{ color: "#000" }}>
           <Typography
-            sx={{ color: "#fff", fontWeight: 700, mt: 5 }}
+            sx={{ color: "#000", fontWeight: 700, mt: 5 }}
             variant="h3"
             align="center"
           >
@@ -94,7 +103,7 @@ export default function Features() {
               <Box
                 component="img"
                 sx={{ width: "100%", borderRadius: "30px" }}
-                src="https://img.freepik.com/free-vector/security-concept-illustration-people-holding-chain_53876-43028.jpg?size=626&ext=jpg"
+                src="https://img.freepik.com/free-vector/security-concept-illustration_114360-4127.jpg?size=626&ext=jpg"
               ></Box>
             </Grid>
             <Grid item xs={12} sx={{ p: 1, mb: 1 }}>

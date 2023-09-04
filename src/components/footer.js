@@ -33,7 +33,7 @@ export default function Footer() {
             <Typography variant="body">SMS messaging app</Typography>
           </Grid>
           <Grid item md={3} xs={12} sx={{ p: 1 }}>
-            <Typography variant="p" sx={{ pl: 2 }}>
+            <Typography variant="p" sx={{ pl: 2, fontWeight: 400 }}>
               Links
             </Typography>
             <List sx={{ fontSize: "14px" }}>
@@ -42,10 +42,10 @@ export default function Footer() {
             </List>
           </Grid>
           <Grid item md={3} xs={12} sx={{ p: 1 }}>
-            <Typography variant="h6" sx={{ pl: 2 }}>
+            <Typography variant="p" sx={{ pl: 2, fontWeight: 400 }}>
               Get
             </Typography>
-            <List>
+            <List sx={{ fontSize: "14px" }}>
               <ListItem>
                 {" "}
                 <FontAwesomeIcon
@@ -67,10 +67,10 @@ export default function Footer() {
             </List>
           </Grid>
           <Grid item md={3} xs={12} sx={{ p: 1 }}>
-            <Typography variant="h6" sx={{ pl: 2 }}>
+            <Typography variant="p" sx={{ pl: 2, fontWeight: 400 }}>
               Contact
             </Typography>
-            <List>
+            <List sx={{ fontSize: "14px" }}>
               <ListItem>
                 {" "}
                 <FontAwesomeIcon

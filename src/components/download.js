@@ -6,13 +6,13 @@ import logo from "../icon.png";
 
 export default function Download() {
   return (
-    <Box sx={{ mt: { md: 0, xs: 5 } }}>
+    <Box sx={{ mt: { md: 0, xs: 5 } }} className="download">
       <Typography
         align="center"
         sx={{
-          color: "#dad8d8",
+          color: "#292929",
           fontWeight: 700,
-          fontSize: { md: "80px", xs: "50px" },
+          fontSize: { md: "50px", xs: "40px" },
         }}
       >
         Get Deku Messaging
@@ -20,14 +20,14 @@ export default function Download() {
       <Box align="center" sx={{ mb: { md: 10, xs: 5 } }}>
         <Button
           size="large"
+          className="btn-play"
+          variant="contained"
           sx={{
             borderRadius: "30px",
-            color: "#cdcecf",
             p: 2,
             m: 1,
-            bgcolor: "#000",
+            color: "#fff",
           }}
-          variant="outlined"
         >
           <FontAwesomeIcon
             icon={faGooglePlay}
@@ -38,14 +38,14 @@ export default function Download() {
         </Button>
         <Button
           size="large"
+          className="btn-deku"
+          variant="contained"
           sx={{
             borderRadius: "30px",
-            color: "#cdcecf",
+            color: "#fff",
             p: 2,
             m: 1,
-            bgcolor: "#000",
           }}
-          variant="contained"
         >
           {" "}
           <Box component="img" src={logo} sx={{ width: "18px", mr: 1 }} />

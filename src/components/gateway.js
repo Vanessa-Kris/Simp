@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 export default function Gateway() {
   return (
     <Parallax translateY={[-100]}>
-      <Box sx={{ p: { md: 10, xs: 0 } }}>
+      <Box
+        sx={{ p: { md: 7, xs: 0 }, my: { md: 10, xs: 0 } }}
+        className="gateway"
+      >
         <Grid container>
           <Grid
             item
@@ -28,7 +31,7 @@ export default function Gateway() {
                 <Box
                   component="img"
                   src={a}
-                  sx={{ width: { md: "300px", xs: "250px" } }}
+                  sx={{ width: { md: "280px", xs: "250px" } }}
                 />
               </Box>
             </motion.div>
@@ -42,14 +45,14 @@ export default function Gateway() {
               alignContent="center"
               sx={{
                 pr: { md: 20, xs: 0 },
-                color: "#dad8d8",
+                color: "#292929",
                 pb: { md: 0, xs: 4 },
               }}
             >
               <Typography variant="h3" sx={{ p: 3, fontWeight: 700 }}>
                 SMS Gateway
               </Typography>
-              <Typography variant="h5">
+              <Typography variant="h6" sx={{ p: 1 }}>
                 Using Deku messaging, you can setup your personalized SMS
                 Gateway through your mobile device, enabling you to send bulk
                 text messages.

@@ -21,10 +21,14 @@ const AnimatedBox = ({ children, delay }) => (
 export default function Banner() {
   return (
     <Parallax translateY={[-10]}>
-      <Box className="banner">
+      <Box className="banner" sx={{ p: { md: 0, xs: 2 } }}>
         <Grid
           container
-          sx={{ p: { md: 3, xs: 3 }, paddingLeft: { md: "300px", xs: "0" } }}
+          sx={{
+            p: { md: 3, xs: 2 },
+            paddingLeft: { md: "300px", xs: "0" },
+            mt: { md: 7, xs: 0 },
+          }}
         >
           <AnimatedBox delay={0.2}>
             <Typography variant="h4" sx={{ fontWeight: 500, color: "#fff" }}>
@@ -32,11 +36,7 @@ export default function Banner() {
             </Typography>
             <Grid item md={12} xs={12} alignItems="center">
               <Box sx={{ display: "flex", alignItems: "center", mt: 3 }}>
-                <Avatar
-                  sx={{ mr: 2 }}
-                  alt="Avatar"
-                  src="https://img.freepik.com/free-vector/little-boy-anime-wearing-winter-clothes_18591-77250.jpg?size=626&ext=jpg"
-                />
+                <Avatar sx={{ mr: 2, bgcolor: "green" }} alt="Avatar" src="" />
                 <Box
                   justifyContent="flex-start"
                   sx={{
@@ -101,11 +101,7 @@ export default function Banner() {
           >
             <AnimatedBox delay={2.5}>
               <Box sx={{ display: "flex" }}>
-                <Avatar
-                  sx={{ mr: 2 }}
-                  alt="Remy Sharp"
-                  src="https://img.freepik.com/free-vector/little-boy-anime-wearing-winter-clothes_18591-77250.jpg?size=626&ext=jpg"
-                />
+                <Avatar sx={{ mr: 2, bgcolor: "green" }} alt="Avatar" src="" />
                 <Box
                   justifyContent="flex-start"
                   sx={{

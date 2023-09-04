@@ -2,17 +2,19 @@ import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import React from "react";
 import MediaQuery from "react-responsive";
 import logo from "../icon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   return (
     <>
       {/* Desktop */}
       <MediaQuery minWidth={1224}>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1, mt: 7 }}>
           <AppBar
-            position="static"
-            fixedTop
-            sx={{ bgcolor: "transparent", color: "#fff" }}
+            className="nav"
+            position="fixed"
+            sx={{ bgcolor: "#fff", color: "#292929" }}
           >
             <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
               <Box
@@ -30,14 +32,25 @@ export default function Nav() {
               </Box>
               <Box>
                 <Button
-                  variant="outlined"
-                  sx={{ borderRadius: "30px", color: "#cdcecf" }}
+                  sx={{
+                    borderRadius: "30px",
+                    color: "#292929",
+                    textDecorationLine: "underline",
+                  }}
                 >
-                  Deku Web
+                  Deku Web{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                    style={{ padding: 5 }}
+                    size="large"
+                  />
                 </Button>
                 <Button
-                  sx={{ ml: 2, borderRadius: "30px", color: "#cdcecf" }}
-                  variant="outlined"
+                  sx={{
+                    ml: 2,
+                    borderRadius: "30px",
+                  }}
+                  variant="contained"
                   href="https://stunnersgalleria.com"
                 >
                   Download for Android
@@ -50,7 +63,7 @@ export default function Nav() {
 
       {/* Mobile View */}
       <MediaQuery maxWidth={1224}>
-        <AppBar position="static" sx={{ bgcolor: "#000", color: "#fff" }}>
+        <AppBar position="static" sx={{ bgcolor: "#fff", color: "#292929" }}>
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <Box
               sx={{
@@ -67,9 +80,10 @@ export default function Nav() {
             </Box>
             <Box sx={{ ms: "auto" }}>
               <Button
+                position="fixed"
                 size="small"
-                sx={{ borderRadius: "30px", color: "#cdcecf" }}
-                variant="outlined"
+                sx={{ borderRadius: "30px" }}
+                variant="contained"
               >
                 Download for Android
               </Button>

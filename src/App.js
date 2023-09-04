@@ -18,7 +18,9 @@ const App = () => {
           style={{ scaleX: scrollYProgress }}
         />
         <Banner />
+
         <Features />
+
         <Scroll />
         <Gateway />
         <Download />
